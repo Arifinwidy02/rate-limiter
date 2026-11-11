@@ -1,0 +1,28 @@
+{
+  "name": "rate-limiter",
+  "version": "1.0.0",
+  "description": "Production-grade HTTP rate limiting in TypeScript: 4 algorithms benchmarked side-by-side, including a live demo of Fixed Window's boundary flaw and its fix.",
+  "type": "module",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "node --test",
+    "demo": "npm run build && node dist/examples/demo.js",
+    "bench": "npm run build && node dist/examples/bench.js"
+  },
+  "keywords": [
+    "rate-limiter",
+    "http",
+    "token-bucket",
+    "leaky-bucket",
+    "sliding-window",
+    "fixed-window",
+    "middleware"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "typescript": "^7.0.2"
+  }
+}
